@@ -160,6 +160,8 @@ function currentConditionsRequest(searchValue) {
 
     });  
 
+    });
+
 };
 
 // Display and save the search history of cities
