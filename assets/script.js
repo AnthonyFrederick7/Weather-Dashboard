@@ -13,7 +13,7 @@ var UVindex = $("#uv-index");
 var weatherContent = $("#weather-content");
 
 // Get access to the OpenWeather API
-var APIkey = "b5631ad8df2e130153d23bc505da1c1a";
+var APIkey = "a17e1499228be1f9c294ac18b234c7d7";
 
 // City array
 var cityList = [];
@@ -130,7 +130,6 @@ function currentConditionsRequest(searchValue) {
                 var forecastTemp = $("<p class='card-text mb-0'>");
                 var forecastHumidity = $("<p class='card-text mb-0'>");
 
-
                 $('#five-day-forecast').append(forecastCol);
                 forecastCol.append(forecastCard);
                 forecastCard.append(forecastCardBody);
@@ -157,7 +156,7 @@ function currentConditionsRequest(searchValue) {
             }
         });
 
-    });  
+    });
 
 };
 
