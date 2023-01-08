@@ -95,7 +95,6 @@ function currentConditionsRequest(searchValue) {
 
         var lat = response.coord.lat;
         var lon = response.coord.lon;
-        
 
         var UVurl = "https://api.openweathermap.org/data/2.5/uvi?&lat=" + lat + "&lon=" + lon + "&appid=" + APIkey;
         // AJAX Call for UV index
