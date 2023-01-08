@@ -1,4 +1,4 @@
-// Easy access to elements
+// Global Variables
 var searchHistoryList = $('#search-history-list');
 var searchCityInput = $("#search-city");
 var searchCityButton = $("#search-city-button");
@@ -15,7 +15,7 @@ var weatherContent = $("#weather-content");
 // Get access to the OpenWeather API
 var APIkey = "b5631ad8df2e130153d23bc505da1c1a";
 
-// Easy access to data
+// City array
 var cityList = [];
 
 // Find current date and display in title
@@ -72,14 +72,11 @@ searchHistoryList.on("click","li.city-btn", function(event) {
 
 });
 
-
-
 // Request Open Weather API based on user input
 function currentConditionsRequest(searchValue) {
     
     // Formulate URL for AJAX api call
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&units=imperial&appid=" + APIkey;
-    
 
     // Make AJAX call
     $.ajax({
@@ -161,9 +158,9 @@ function currentConditionsRequest(searchValue) {
             }
         });
 
-    });
+    });  
 
-    
+    });
 
 };
 
